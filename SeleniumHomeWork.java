@@ -18,8 +18,8 @@ public class SeleniumHomeWork {
 		ChromeDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
-		//new method
-		driver.navigate().to(testUrl);
+		//new method 'get'
+		driver.get(testUrl);
 		String mainWindow = driver.getWindowHandle();
 		firstWindowTitle = driver.getTitle();
 		System.out.println(firstWindowTitle);
